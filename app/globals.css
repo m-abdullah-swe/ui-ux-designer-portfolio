@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Theme backgrounds */
+  .light {
+    background-color: #FAFAFA;
+  }
+  .dark {
+    background-color: #0A0A0A;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-soft;
+  }
+  
+  .glass-effect-dark {
+    @apply bg-gray-900/80 backdrop-blur-xl border border-gray-700/30 shadow-soft;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 hover:from-primary-600 hover:via-secondary-600 hover:via-accent-600 hover:via-parrot-600 hover:to-green-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-primary-500/30;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-gradient-to-r hover:from-primary-500 hover:via-secondary-500 hover:via-accent-500 hover:via-parrot-500 hover:to-green-500 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-primary-500/20;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary-500 via-primary-400 to-secondary-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-parrot-500 via-green-500 to-green-600 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-24 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-primary-600 via-secondary-600 via-accent-600 via-parrot-600 to-green-600;
+}
+
+/* Loading animation */
+.loading-dots {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loading-dots div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #EF4444, #F97316, #EAB308, #06B6D4, #22C55E);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading-dots div:nth-child(1) {
+  left: 8px;
+  animation: loading-dots1 0.6s infinite;
+}
+
+.loading-dots div:nth-child(2) {
+  left: 8px;
+  animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots div:nth-child(3) {
+  left: 32px;
+  animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots div:nth-child(4) {
+  left: 56px;
+  animation: loading-dots3 0.6s infinite;
+}
+
+@keyframes loading-dots1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loading-dots3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loading-dots2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* Design showcase enhancements */
+.design-card {
+  @apply relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-soft;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  .design-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #EF4444, #F97316, #EAB308, #06B6D4, #22C55E);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.design-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Gradient backgrounds - ROYPG */
+.gradient-bg-1 {
+  background: linear-gradient(135deg, #EF4444 0%, #F97316 25%, #EAB308 50%, #06B6D4 75%, #22C55E 100%);
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, #F97316 0%, #EAB308 33%, #06B6D4 66%, #22C55E 100%);
+}
+
+.gradient-bg-3 {
+  background: linear-gradient(135deg, #EAB308 0%, #06B6D4 50%, #22C55E 100%);
+}
+
