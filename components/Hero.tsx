@@ -75,9 +75,8 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-6"
             >
-              <span className="inline-flex items-center gap-2 text-lg font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-primary-50 via-secondary-50 via-accent-50 via-parrot-50 to-green-50 dark:from-primary-900/30 dark:via-secondary-900/30 dark:via-accent-900/30 dark:via-parrot-900/30 dark:to-green-900/30 border border-primary-200/50 dark:border-primary-800/50 backdrop-blur-sm">
-                <Sparkles className="h-5 w-5 text-primary-500" />
-                <span className="bg-gradient-to-r from-primary-600 via-secondary-600 via-accent-500 via-parrot-500 to-green-500 dark:from-primary-400 dark:via-secondary-400 dark:via-accent-400 dark:via-parrot-400 dark:to-green-400 bg-clip-text text-transparent">Creative Designer</span>
+              <span className="text-lg text-primary-500 dark:text-primary-400 font-medium">
+                Welcome to my world
               </span>
             </motion.div>
 
@@ -85,16 +84,11 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-gray-900 dark:text-white mb-6 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6 leading-tight"
             >
-              Crafting{' '}
-              <span className="bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 to-parrot-500 bg-clip-text text-transparent">
-                Beautiful
-              </span>
-              <br />
-              Digital{' '}
-              <span className="bg-gradient-to-r from-parrot-500 via-green-500 to-green-600 bg-clip-text text-transparent">
-                Experiences
+              Hi, I'm{' '}
+              <span className="bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 bg-clip-text text-transparent">
+                Ayesha Ali
               </span>
             </motion.h1>
 
@@ -102,9 +96,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-2xl"
+              className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
             >
-              Figma Expert | UI/UX Designer | Websites & Apps from Scratch | Website to App Conversion
+              UI/UX Designer | Figma Expert | Creative Strategist
             </motion.p>
 
             <motion.div
@@ -115,46 +109,43 @@ const Hero = () => {
             >
               <motion.button
                 onClick={() => scrollToSection('#projects')}
-                whileHover={{ scale: 1.05, y: -2 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary flex items-center justify-center gap-2"
               >
-                <span>View My Work</span>
+                <span>Explore My Work</span>
                 <ChevronDown className="h-5 w-5" />
               </motion.button>
 
               <motion.button
                 onClick={() => scrollToSection('#contact')}
-                whileHover={{ scale: 1.05, y: -2 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-secondary flex items-center justify-center gap-2"
               >
                 <Mail className="h-5 w-5" />
-                <span>Let's Connect</span>
+                <span>Get in Touch</span>
               </motion.button>
             </motion.div>
 
-            {/* Design Skills Quick View */}
+            {/* Quick Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="mt-16 grid grid-cols-3 gap-8"
+              className="mt-12 grid grid-cols-3 gap-8"
             >
-              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-white/80 to-primary-50/50 dark:from-gray-800/80 dark:to-primary-900/30 backdrop-blur-sm border-2 border-primary-200/50 dark:border-primary-800/50 shadow-lg">
-                <Palette className="h-8 w-8 text-primary-500 mx-auto mb-2" />
-                <div className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 bg-clip-text text-transparent">50+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Designs</div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary-500 dark:text-primary-400">3+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
               </div>
-              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-white/80 to-parrot-50/50 dark:from-gray-800/80 dark:to-parrot-900/30 backdrop-blur-sm border-2 border-parrot-200/50 dark:border-parrot-800/50 shadow-lg">
-                <Layers className="h-8 w-8 text-parrot-500 mx-auto mb-2" />
-                <div className="text-2xl font-bold bg-gradient-to-r from-parrot-600 via-parrot-500 to-green-500 bg-clip-text text-transparent">30+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Projects</div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary-500 dark:text-primary-400">20+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
               </div>
-              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-white/80 to-green-50/50 dark:from-gray-800/80 dark:to-green-900/30 backdrop-blur-sm border-2 border-green-200/50 dark:border-green-800/50 shadow-lg">
-                <Sparkles className="h-8 w-8 text-green-500 mx-auto mb-2" />
-                <div className="text-2xl font-bold bg-gradient-to-r from-green-600 via-green-500 to-green-400 bg-clip-text text-transparent">100%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Satisfaction</div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary-500 dark:text-primary-400">100%</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Client Satisfaction</div>
               </div>
             </motion.div>
           </motion.div>
@@ -167,54 +158,27 @@ const Hero = () => {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* Multi-layer Glow Effect with ROYPG Gradients */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/50 via-secondary-500/40 via-accent-500/35 via-parrot-500/30 to-green-500/40 rounded-3xl blur-3xl opacity-60 scale-110 animate-pulse-slow"></div>
-              <div className="absolute inset-0 bg-gradient-to-tl from-green-500/40 via-parrot-500/30 via-accent-500/25 via-secondary-500/30 to-primary-500/40 rounded-3xl blur-2xl opacity-40 scale-105"></div>
+              {/* Subtle Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full blur-2xl opacity-20 scale-110"></div>
               
-              {/* Profile Image Container with Glass Morphism */}
+              {/* Profile Image Container - Simple and Clean */}
               <motion.div
-                whileHover={{ scale: 1.05, rotate: 1 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="relative w-80 h-80 lg:w-[420px] lg:h-[520px] rounded-3xl overflow-hidden border-4 border-white/80 dark:border-gray-800/80 shadow-2xl bg-white dark:bg-gray-900"
+                className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-100/50 via-secondary-100/50 via-accent-100/50 via-parrot-100/50 to-green-100/50 dark:from-primary-900/30 dark:via-secondary-900/30 dark:via-accent-900/30 dark:via-parrot-900/30 dark:to-green-900/30"></div>
-                
-                <div className="relative w-full h-full z-10">
-                  <Image
-                    src="/profile.png"
-                    alt="Ayesha Ali - UI/UX Designer"
-                    fill
-                    sizes="(max-width: 1024px) 320px, 420px"
-                    className="object-cover"
-                    priority
-                    unoptimized
-                  />
-                </div>
+                <Image
+                  src="/profile.png"
+                  alt="Ayesha Ali - UI/UX Designer"
+                  fill
+                  sizes="(max-width: 1024px) 60vw, 384px"
+                  className="object-cover"
+                  priority
+                  unoptimized
+                />
                 
                 {/* Subtle Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-20 pointer-events-none"></div>
-                
-                {/* Design Badge Overlay */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.2 }}
-                  className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-2 border-white/80 dark:border-gray-700/80 shadow-xl z-30"
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50"></div>
-                    <div>
-                      <p className="text-sm font-bold text-gray-900 dark:text-white">Ayesha Ali</p>
-                      <p className="text-xs text-gray-600 dark:text-gray-400">UI/UX Designer</p>
-                    </div>
-                  </div>
-                  <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-xs font-medium text-gray-700 dark:text-gray-300">Available for projects</span>
-                    </div>
-                  </div>
-                </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </motion.div>
             </div>
           </motion.div>
