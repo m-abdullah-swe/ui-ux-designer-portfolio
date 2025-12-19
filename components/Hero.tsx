@@ -60,7 +60,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Text Content */}
           <motion.div
@@ -182,7 +182,7 @@ const Hero = () => {
                 <div className="relative w-full h-full z-10">
                   <Image
                     src="/profile.png"
-                    alt="Muhammad Abdullah - UI/UX Designer"
+                    alt="Ayesha Ali - UI/UX Designer"
                     fill
                     sizes="(max-width: 1024px) 320px, 420px"
                     className="object-cover"
@@ -204,7 +204,7 @@ const Hero = () => {
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50"></div>
                     <div>
-                      <p className="text-sm font-bold text-gray-900 dark:text-white">Muhammad Abdullah</p>
+                      <p className="text-sm font-bold text-gray-900 dark:text-white">Ayesha Ali</p>
                       <p className="text-xs text-gray-600 dark:text-gray-400">UI/UX Designer</p>
                     </div>
                   </div>

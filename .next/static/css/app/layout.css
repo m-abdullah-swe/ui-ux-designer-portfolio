@@ -2593,6 +2593,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2661,6 +2665,10 @@ h1, h2, h3, h4, h5, h6 {
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .lg\:text-left{
     text-align: left;

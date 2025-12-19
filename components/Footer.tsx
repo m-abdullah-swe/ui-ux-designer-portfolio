@@ -14,19 +14,19 @@ const Footer = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: 'https://github.com/m-abdullah-swe',
+      url: 'https://github.com/ayesha-ali',
       color: 'hover:text-gray-900 dark:hover:text-white'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/m-abdullah-se',
+      url: 'https://www.linkedin.com/in/ayesha-ali-1049s/',
       color: 'hover:text-blue-600'
     },
     {
       icon: Mail,
       name: 'Email',
-      url: 'mailto:abdullah@codebeyond.site',
+      url: 'mailto:ayesha.ali@example.com',
       color: 'hover:text-primary-500'
     }
   ]
@@ -105,7 +105,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              © {currentYear} Muhammad Abdullah | Design Studio. All rights reserved.
+              © {currentYear} Ayesha Ali | Design Studio. All rights reserved.
             </p>
           </div>
         </motion.div>

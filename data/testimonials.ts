@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     clientName: 'Jasmine P',
     clientRole: 'Product Manager',
     rating: 5,
-    testimonial: 'Muhammad created an absolutely stunning design for our app. The user experience is intuitive, and the visual design exceeded our expectations. The attention to detail and design thinking is remarkable.',
+    testimonial: 'Ayesha created an absolutely stunning design for our app. The user experience is intuitive, and the visual design exceeded our expectations. The attention to detail and design thinking is remarkable.',
     platform: 'fiverr'
   },
   {
@@ -25,7 +25,7 @@ export const testimonials: Testimonial[] = [
     clientName: 'Client',
     clientRole: 'Startup Founder',
     rating: 5,
-    testimonial: 'Working with Muhammad was a pleasure. He understood our vision and translated it into a beautiful, user-friendly design. The design system he created is scalable and the user flows are seamless.',
+    testimonial: 'Working with Ayesha was a pleasure. She understood our vision and translated it into a beautiful, user-friendly design. The design system she created is scalable and the user flows are seamless.',
     platform: 'upwork'
   },
   {
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     clientName: 'Razan R',
     clientRole: 'Tech Lead',
     rating: 5,
-    testimonial: 'The design work is exceptional! Muhammad has a great eye for detail and creates designs that are both beautiful and functional. The security-focused design approach was exactly what we needed.',
+    testimonial: 'The design work is exceptional! Ayesha has a great eye for detail and creates designs that are both beautiful and functional. The security-focused design approach was exactly what we needed.',
     platform: 'direct'
   },
   {
@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
     clientName: 'Client',
     clientRole: 'Product Owner',
     rating: 5,
-    testimonial: 'Muhammad delivered a design that perfectly captures our brand and user needs. The design is modern, engaging, and the user experience is delightful. Highly recommend!',
+    testimonial: 'Ayesha delivered a design that perfectly captures our brand and user needs. The design is modern, engaging, and the user experience is delightful. Highly recommend!',
     platform: 'direct'
   }
 ]

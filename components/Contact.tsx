@@ -67,8 +67,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'abdullah@codebeyond.site',
-      link: 'mailto:abdullah@codebeyond.site'
+      value: 'ayesha.ali@example.com',
+      link: 'mailto:ayesha.ali@example.com'
     },
     {
       icon: Phone,
@@ -88,13 +88,13 @@ const Contact = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com/m-abdullah-swe",
+      url: "https://github.com/ayesha-ali",
       color: "hover:text-gray-900 dark:hover:text-white",
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/m-abdullah-se",
+      url: "https://www.linkedin.com/in/ayesha-ali-1049s/",
       color: "hover:text-blue-600",
     },
     {

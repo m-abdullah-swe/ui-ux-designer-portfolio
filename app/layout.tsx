@@ -15,23 +15,23 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Muhammad Abdullah — UI/UX Designer & Creative Strategist',
-  description: 'Portfolio of Muhammad Abdullah, UI/UX Designer from Pakistan, specializing in user-centered design, digital experiences, and creative problem-solving.',
+  title: 'Ayesha Ali — UI/UX Designer & Creative Strategist',
+  description: 'Portfolio of Ayesha Ali, UI/UX Designer specializing in user-centered design, digital experiences, and creative problem-solving.',
   keywords: 'UI/UX Designer, User Experience, User Interface Design, Product Design, Design Systems, Figma, Adobe XD, Creative Design',
-  authors: [{ name: 'Muhammad Abdullah' }],
-  creator: 'Muhammad Abdullah',
-  publisher: 'Muhammad Abdullah',
+  authors: [{ name: 'Ayesha Ali' }],
+  creator: 'Ayesha Ali',
+  publisher: 'Ayesha Ali',
   openGraph: {
-    title: 'Muhammad Abdullah — UI/UX Designer & Creative Strategist',
-    description: 'Portfolio of Muhammad Abdullah, UI/UX Designer focused on creating beautiful, functional, and user-centered digital experiences.',
-    url: 'https://muhammadabdullah.design',
-    siteName: 'Muhammad Abdullah',
+    title: 'Ayesha Ali — UI/UX Designer & Creative Strategist',
+    description: 'Portfolio of Ayesha Ali, UI/UX Designer focused on creating beautiful, functional, and user-centered digital experiences.',
+    url: 'https://ayeshaali.design',
+    siteName: 'Ayesha Ali',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Muhammad Abdullah UI/UX Design Portfolio',
+        alt: 'Ayesha Ali UI/UX Design Portfolio',
       },
     ],
     locale: 'en_US',
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Abdullah — UI/UX Designer & Creative Strategist',
-    description: 'UI/UX Designer from Pakistan, specializing in user-centered design and digital experiences.',
+    title: 'Ayesha Ali — UI/UX Designer & Creative Strategist',
+    description: 'UI/UX Designer specializing in user-centered design and digital experiences.',
     images: ['/og-image.jpg'],
   },
   robots: {

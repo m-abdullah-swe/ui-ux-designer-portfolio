@@ -81,7 +81,7 @@ const Navbar = () => {
               className="text-2xl font-heading font-bold flex items-center gap-2"
             >
               <Palette className="h-6 w-6 text-primary-500" />
-              <span className="bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 bg-clip-text text-transparent">M. Abdullah</span>
+              <span className="bg-gradient-to-r from-primary-500 via-secondary-500 via-accent-500 via-parrot-500 to-green-500 bg-clip-text text-transparent">Ayesha Ali</span>
             </a>
           </motion.div>
 
